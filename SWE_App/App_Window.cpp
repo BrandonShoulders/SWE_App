@@ -1,5 +1,5 @@
 #include "App_Window.h"
-
+#include "ButtonFactory.h"
 
 
 wxBEGIN_EVENT_TABLE(App_Window, wxFrame)
@@ -27,16 +27,19 @@ EVT_BUTTON(20, App_Window::onBtnClick)
 EVT_BUTTON(21, App_Window::onBtnClick)
 EVT_BUTTON(22, App_Window::onBtnClick)
 EVT_BUTTON(23, App_Window::onBtnClick)
+
 wxEND_EVENT_TABLE()
 
 
 
 
 //Constructor for cpp file.
-//The wxxFrame takes in 5 parameters( Parent object ,ID tag , Title , where to create window(starting point from upper left screen, window width/height)
+//The wxFrame takes in 5 parameters( Parent object ,ID tag , Title , where to create window(starting point from upper left screen, window width/height)
 App_Window::App_Window() : wxFrame(nullptr, wxID_ANY, "Brandon's Calculator App", wxPoint(250, 250), wxSize(345, 550)) {
 	  
-	  textbox = new wxTextCtrl(this, 23, " ", wxPoint(8, 10), wxSize(315, 100));
+	textbox = new wxTextCtrl(this, 23, " ", wxPoint(8, 10), wxSize(315, 100));
+    
+	
 }
 App_Window::~App_Window() {
 

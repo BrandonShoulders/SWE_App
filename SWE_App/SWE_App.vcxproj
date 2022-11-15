@@ -22,6 +22,8 @@
     <ClInclude Include="App.h" />
     <ClInclude Include="App_Window.h" />
     <ClInclude Include="ButtonFactory.h" />
+    <ClInclude Include="CalculatorProcessor.h" />
+    <ClInclude Include="ShuntingYardAlgorithm.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />

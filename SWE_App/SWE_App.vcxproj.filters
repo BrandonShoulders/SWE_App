@@ -24,6 +24,12 @@
     <ClInclude Include="ButtonFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CalculatorProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShuntingYardAlgorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp">
