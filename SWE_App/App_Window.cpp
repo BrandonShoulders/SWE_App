@@ -1,4 +1,5 @@
 #include "App_Window.h"
+#include "ButtonFactory.h"
 
 
 
@@ -37,6 +38,28 @@ wxEND_EVENT_TABLE()
 App_Window::App_Window() : wxFrame(nullptr, wxID_ANY, "Brandon's Calculator App", wxPoint(250, 250), wxSize(345, 550)) {
 	  
 	  textbox = new wxTextCtrl(this, 23, " ", wxPoint(8, 10), wxSize(315, 100));
+	  num1 = ButtonFactory::createNum1Btn(this);
+	  num2 = ButtonFactory::createNum2Btn(this);
+	  num3 = ButtonFactory::createNum3Btn(this);
+	  num4 = ButtonFactory::createNum4Btn(this);
+	  num5 = ButtonFactory::createNum5Btn(this);
+	  num6 = ButtonFactory::createNum6Btn(this);
+	  num7 = ButtonFactory::createNum7Btn(this);
+	  num8 = ButtonFactory::createNum8Btn(this);
+	  num9 = ButtonFactory::createNum9Btn(this);
+	  num0 = ButtonFactory::createNum0Btn(this);
+	  addBtn = ButtonFactory::createAddBtn(this);
+	  subtractBtn = ButtonFactory::createSubtractBtn(this);
+	  multiplyBtn = ButtonFactory::createMultiplyBtn(this);
+	  divideBtn = ButtonFactory::createDivideBtn(this);
+	  moduloBtn = ButtonFactory::createModuloBtn(this);
+	  sinBtn = ButtonFactory::createSinBtn(this);
+	  cosBtn = ButtonFactory::createCosBtn(this);
+	  tanBtn = ButtonFactory::createTanBtn(this);
+	  deleteBtn = ButtonFactory::creaeteDelBtn(this);
+	  clearBtn = ButtonFactory::createClearBtn(this);
+	  equalBtn = ButtonFactory::createEqualsBtn(this);
+	  negateBtn = ButtonFactory::createNegateBtn(this);
 }
 App_Window::~App_Window() {
 
@@ -50,5 +73,6 @@ void App_Window::onExit(wxCommandEvent& e)
 
 void App_Window::onBtnClick(wxCommandEvent& e)
 {
+	int i = e.GetId();
 
 }
