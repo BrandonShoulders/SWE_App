@@ -1,38 +1,38 @@
 #pragma once
 #include "wx/wx.h"
-#include "App.h"
-#include "App_Window.h"
 
 class ButtonFactory: public wxFrame
 {
-public: 
-	
+
+protected:
 	 wxButton* createButton(wxWindow* Parent, wxWindowID id, const wxString& title, const wxPoint& pos, const wxSize& size);
 
-private:
-	 wxButton* createNum0Btn(wxWindow* Parent);
-	 wxButton* createNum1Btn(wxWindow* Parent);
-	 wxButton* createNum2Btn(wxWindow* Parent);
-	 wxButton* createNum3Btn(wxWindow* Parent);
-	 wxButton* createNum4Btn(wxWindow* Parent);
-	 wxButton* createNum5Btn(wxWindow* Parent);
-	 wxButton* createNum6Btn(wxWindow* Parent);
-	 wxButton* createNum7Btn(wxWindow* Parent);
-	 wxButton* createNum8Btn(wxWindow* Parent);
-	 wxButton* createNum9Btn(wxWindow* Parent);
-	 wxButton* createNegateBtn(wxWindow* Parent);
-	 wxButton* createAddBtn(wxWindow* Parent);
-	 wxButton* createSubtractBtn(wxWindow* Parent);
-	 wxButton* createMultiplyBtn(wxWindow* Parent);
-	 wxButton* createDivideBtn(wxWindow* Parent);
-	 wxButton* createModuloBtn(wxWindow* Parent);
-	 wxButton* createSinBtn(wxWindow* Parent);
-	 wxButton* createCosBtn(wxWindow* Parent);
-	 wxButton* createTanBtn(wxWindow* Parent);
-	 wxButton* createNumBtn(wxWindow* Parent);
-	 wxButton* createClearBtn(wxWindow* Parent);
-	 wxButton* creaeteDelBtn(wxWindow* Parent);
-	 wxButton* createEqualsBtn(wxWindow* Parent);
+public:
+	static wxButton* createNum0Btn(wxWindow* Parent);
+	static wxButton* createNum1Btn(wxWindow* Parent);
+	static wxButton* createNum2Btn(wxWindow* Parent);
+	static wxButton* createNum3Btn(wxWindow* Parent);
+	static wxButton* createNum4Btn(wxWindow* Parent);
+	static wxButton* createNum5Btn(wxWindow* Parent);
+	static wxButton* createNum6Btn(wxWindow* Parent);
+	static wxButton* createNum7Btn(wxWindow* Parent);
+	static wxButton* createNum8Btn(wxWindow* Parent);
+	static wxButton* createNum9Btn(wxWindow* Parent);
+	static wxButton* createNegateBtn(wxWindow* Parent);
+	static wxButton* createAddBtn(wxWindow* Parent);
+	static wxButton* createSubtractBtn(wxWindow* Parent);
+	static wxButton* createMultiplyBtn(wxWindow* Parent);
+	static wxButton* createDivideBtn(wxWindow* Parent);
+	static wxButton* createModuloBtn(wxWindow* Parent);
+	static wxButton* createSinBtn(wxWindow* Parent);
+	static wxButton* createCosBtn(wxWindow* Parent);
+	static wxButton* createTanBtn(wxWindow* Parent);
+	static wxButton* createNumBtn(wxWindow* Parent);
+	static wxButton* createClearBtn(wxWindow* Parent);
+	static wxButton* createDelBtn(wxWindow* Parent);
+	static wxButton* createEqualsBtn(wxWindow* Parent);
+
+
 };
 
 

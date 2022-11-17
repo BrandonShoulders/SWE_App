@@ -23,12 +23,12 @@
     <ClInclude Include="App_Window.h" />
     <ClInclude Include="ButtonFactory.h" />
     <ClInclude Include="CalculatorProcessor.h" />
-    <ClInclude Include="ShuntingYardAlgorithm.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
     <ClCompile Include="App_Window.cpp" />
     <ClCompile Include="ButtonFactory.cpp" />
+    <ClCompile Include="CalculatorProcessor.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

@@ -209,3 +209,5 @@ wxButton* createNegateBtn(wxWindow* Parent) {
 	return negateBtn;
 }
 
+
+
