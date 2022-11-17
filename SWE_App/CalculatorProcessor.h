@@ -22,6 +22,8 @@ protected:
 	/*constructor*/
 	CalculatorProcessor() {};
 
+	const double pi = 3.14;
+
 public:
 
 	/*
@@ -46,10 +48,12 @@ public:
 	/*Function to return value or expression*/
 	double evaluate(std::string tokens);
 
+	/*Function for trigonometry*/
+	double sinfuntion(double degree);
+	double tanfuntion(double degree);	
+	double cosfuntion(double degree);
 
 };
-
-
 
 
 

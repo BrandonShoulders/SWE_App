@@ -4,7 +4,7 @@
 #include <deque>
 
 
-CalculatorProcessor* _CalculatorProcessor = nullptr;
+CalculatorProcessor::CalculatorProcessor* _CalculatorProcessor = nullptr;
 
 CalculatorProcessor* CalculatorProcessor::GetInstance() {
 	if (_calculatorProcessor == nullptr)
@@ -15,7 +15,7 @@ CalculatorProcessor* CalculatorProcessor::GetInstance() {
 }
 int CalculatorProcessor::precedence(char operand)
 {
-	if (operand == '~')
+	if (operand == '(-)')
 	{
 		return 3;
 	}
@@ -45,12 +45,11 @@ double CalculatorProcessor::calculate(int a, int b, char operand) {
 
 double CalculatorProcessor::evaluate(std::string tokens) {
 
-	// This code is contributed by Nikhil jindal.
 
 	/* stack LIFO last in first out order*/
 	std::stack<char> operators;
 	/* deque FIFO first in first out order*/
-	std::deque<unsigned int> value;
+	std::deque<int> value;
 
 	for (unsigned int i = 0; i < tokens.length(); i++) {
 
@@ -68,7 +67,7 @@ double CalculatorProcessor::evaluate(std::string tokens) {
 		/*if current token is a number, push to deque*/
 		if (isdigit(tokens[i]))
 		{
-			unsigned int val = 0;
+			 int val = 0;
 
 			/*May have more than one digit in the number*/
 			while (i < tokens.length() && isdigit(tokens[i]))
@@ -139,6 +138,23 @@ double CalculatorProcessor::evaluate(std::string tokens) {
 		}
 
 	}
-	return value.front();
+	return (double)value.front();
+}
+
+double CalculatorProcessor::sinfuntion(double degree)
+{
+	double radians = degree * pi / 180;
+	return sin(radians);
+}
+double CalculatorProcessor::tanfuntion(double degree)
+{
+	double radians = degree * pi / 180;
+
+	return tan(radians);
+}
+double CalculatorProcessor::cosfuntion(double degree)
+{
+	double radians = degree * pi / 180;
+	return cos(radians);
 }
 

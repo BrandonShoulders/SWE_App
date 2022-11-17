@@ -7,7 +7,6 @@ class App_Window: public wxFrame
 {
 	
 	wxTextCtrl* textbox = nullptr;
-//	wxButton* btn = nullptr;
 
 public:
 	//wxFrame requires a default constructor
