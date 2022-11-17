@@ -53,7 +53,7 @@ wxButton* ButtonFactory::createNum9Btn(wxWindow* Parent) {
 }
 wxButton* ButtonFactory::createNum0Btn(wxWindow* Parent) {
 	wxButton* num0Btn;
-	num0Btn = new wxButton(Parent, 10, "0", wxPoint(8, 350), wxSize(75, 75));
+	num0Btn = new wxButton(Parent, 10, "0", wxPoint(83, 425), wxSize(75, 75));
 	return num0Btn;
 }
 wxButton* ButtonFactory::createAddBtn(wxWindow* Parent) {
