@@ -21,10 +21,12 @@
   <ItemGroup>
     <ClInclude Include="App.h" />
     <ClInclude Include="App_Window.h" />
+    <ClInclude Include="ButtonFactory.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
     <ClCompile Include="App_Window.cpp" />
+    <ClCompile Include="ButtonFactory.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
